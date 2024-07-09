@@ -32,10 +32,11 @@ def main():
     drive = GoogleDrive(gauth)
     
     # 画像ファイルのアップロード
-    f = drive.CreateFile({"parents":[{'id':os.getenv('PARENT_ID')}],
-                          "id":os.getenv('CHILD_ID'),
-                          "title": "test.jpg",
-                          "mimeType": "image/jpeg"})
+    f = drive.CreateFile({"parents":[{'id':os.getenv('PARENT_ID')}],\
+        "id":os.getenv('CHILD_ID'),\
+        "title": "test.jpg",\
+        "mimeType": "image/jpeg"})
+
     f.SetContentFile(os.getenv('LAB_IMAGE_PATH'))
     f.Upload()
 
