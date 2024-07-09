@@ -12,7 +12,10 @@ def main():
     
     # 認証情報を保存するファイル名
     credentials_file = os.getenv('GAUTH_CREDENTIALS')
+    
+    #認証情報が存在しない場合は以下を実行する必要があります
     # gauth.LocalWebserverAuth()
+    
     # 認証情報を読み込みます
     gauth.LoadCredentialsFile(credentials_file)
     
