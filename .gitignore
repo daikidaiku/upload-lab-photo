@@ -1,4 +1,6 @@
 /client_secrets.json
 /mycreds.txt
-/setting.yaml
+/settings.yaml
 /.env
+/credentials.json
+/service_account.json
